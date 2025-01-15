@@ -252,7 +252,7 @@ export default function Commiter() {
                                   className={cn(
                                     "w-[10px] h-[10px] rounded-sm cursor-pointer transition-colors",
                                     getDateColor(clickCount),
-                                    !isInFuture && "hover:ring-2 hover:ring-gray-500"
+                                    isInFuture ? "opacity-50" : "hover:ring-2 hover:ring-gray-500"
                                   )}
                                   style={{
                                     gridColumn: weekNumber + 1,
